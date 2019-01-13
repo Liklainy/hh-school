@@ -2,48 +2,87 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://tech.hh.ru/bloko/styles/css/blocks/icon.css"/>
     <title></title>
 </head>
 <body>
 <div class="modal-wrapper">
     <div class="modal">
-        <div class="contact-info">
-        <div class="contact-info-item">
-                        <div class="contact-info-item__icon">
-                    <span class="bloko-icon bloko-icon_mail-outline bloko-icon_initial-inverted"></span>
+        <div class="contact-info-wrapper">
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <div class="contact-info-item__icon">
+                        <span class="bloko-icon bloko-icon_change-position bloko-icon_initial-inverted"></span>
+                    </div>
+
+                    <div class="contact-info-item__content">
+                        <div class="contact-info-item__title">Адрес</div>
+                        <div class="contact-info-item__text">Москва, Годовикова 9/10</div>
+                    </div>
                 </div>
 
-                <div class="contact-info-item__content">
-                    <div class="contact-info-item__title">Адрес</div>
-                    <div class="contact-info-item__text">Москва, Годовикова 9/10</div>
-                </div>
-            </div>
+                <div class="contact-info-item">
+                    <div class="contact-info-item__icon">
+                        <span class="bloko-icon bloko-icon_phone bloko-icon_initial-inverted"></span>
+                    </div>
 
-            <div class="contact-info-item">
-                <div class="contact-info-item__icon">
-                    <span class="bloko-icon bloko-icon_mail-outline bloko-icon_initial-inverted"></span>
-                </div>
-
-                <div class="contact-info-item__content">
-                    <div class="contact-info-item__title">Давайте поговорим</div>
-                    <a href="tel:+78001236879" class="contact-info-item__link">+7 800 1236879</a>
-                </div>
-            </div>
-
-            <div class="contact-info-item">
-                <div class="contact-info-item__icon">
-                    <span class="bloko-icon bloko-icon_mail-outline bloko-icon_initial-inverted"></span>
+                    <div class="contact-info-item__content">
+                        <div class="contact-info-item__title">Давайте поговорим</div>
+                        <a href="tel:+78001236879" class="contact-info-item__link">+7 800 1236879</a>
+                    </div>
                 </div>
 
-                <div class="contact-info-item__content">
-                    <div class="contact-info-item__title">Служба поддержки</div>
-                    <a href="mailto:support@example.com" class="contact-info-link">support@example.com</a>
+                <div class="contact-info-item">
+                    <div class="contact-info-item__icon">
+                        <span class="bloko-icon bloko-icon_mail-outline bloko-icon_initial-inverted"></span>
+                    </div>
+
+                    <div class="contact-info-item__content">
+                        <div class="contact-info-item__title">Служба поддержки</div>
+                        <a href="mailto:support@example.com" class="contact-info-item__link">support@example.com</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <form class="contact-form">
-            <h2 class="contact-form-title">Напишите нам сообщение</h2>
-        </form>
+        <div class="contact-form-wrapper">
+            <form class="contact-form" method="post">
+                <h2 class="contact-form__title">Напишите нам сообщение</h2>
+                <div class="contact-form-row">
+                    <h5 class="contact-form-row__title">УКАЖИТЕ ФАМИЛИЮ И ИМЯ</h5>
+                    <div class="contact-form-inputs-row">
+                        <div class="contact-form-inputs-col">
+                            <input type="text" class="contact-form__input" name="firstName" placeholder="Имя">
+                        </div>
+                        <div class="contact-form-inputs-col">
+                            <input type="text" class="contact-form__input" name="lastName" placeholder="Фамилия">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row">
+                    <h5 class="contact-form-row__title">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</h5>
+                    <div class="contact-form-inputs-row">
+                        <div class="contact-form-inputs-col">
+                            <input type="text" class="contact-form__input" name="email" placeholder="example@email.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row">
+                    <h5 class="contact-form-row__title">НОМЕР ТЕЛЕФОНА</h5>
+                    <div class="contact-form-inputs-row">
+                        <div class="contact-form-inputs-col">
+                            <input type="text" class="contact-form__input" name="phone" placeholder="+7 800 0000000">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row">
+                    <h5 class="contact-form-row__title">СООБЩЕНИЕ</h5>
+                    <textarea class="contact-form__textarea" name="message" placeholder=""/></textarea>
+                </div>
+                <input type="submit" class="contact-form__button" value="ОТПРАВИТЬ СООБЩЕНИЕ">
+            </form>
+        </div>
     </div>
 </div>
 </body>
