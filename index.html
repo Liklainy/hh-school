@@ -53,10 +53,12 @@
                     <h5 class="contact-form-row__title">УКАЖИТЕ ФАМИЛИЮ И ИМЯ</h5>
                     <div class="contact-form-inputs-row">
                         <div class="contact-form-inputs-col">
-                            <input type="text" class="contact-form__input" name="firstName" placeholder="Имя">
+                            <input type="text" class="contact-form__input input-with-border" name="firstName" placeholder="Имя">
+                            <div class="contact-form__border"></div>
                         </div>
                         <div class="contact-form-inputs-col">
-                            <input type="text" class="contact-form__input" name="lastName" placeholder="Фамилия">
+                            <input type="text" class="contact-form__input input-with-border" name="lastName" placeholder="Фамилия">
+                            <div class="contact-form__border"></div>
                         </div>
                     </div>
                 </div>
@@ -64,7 +66,8 @@
                     <h5 class="contact-form-row__title">АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</h5>
                     <div class="contact-form-inputs-row">
                         <div class="contact-form-inputs-col">
-                            <input type="text" class="contact-form__input" name="email" placeholder="example@email.com">
+                            <input type="text" class="contact-form__input input-with-border" name="email" placeholder="example@email.com">
+                            <div class="contact-form__border-big"></div>
                         </div>
                     </div>
                 </div>
@@ -72,13 +75,19 @@
                     <h5 class="contact-form-row__title">НОМЕР ТЕЛЕФОНА</h5>
                     <div class="contact-form-inputs-row">
                         <div class="contact-form-inputs-col">
-                            <input type="text" class="contact-form__input" name="phone" placeholder="+7 800 0000000">
+                            <input type="text" class="contact-form__input input-with-border" name="phone" placeholder="+7 800 0000000">
+                            <div class="contact-form__border-big"></div>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-row">
                     <h5 class="contact-form-row__title">СООБЩЕНИЕ</h5>
-                    <textarea class="contact-form__textarea" name="message" placeholder=""/></textarea>
+                    <div class="contact-form-inputs-row">
+                        <div class="contact-form-inputs-col">
+                            <textarea class="contact-form__textarea input-with-border" name="message" placeholder=""/></textarea>
+                            <div class="contact-form__border-big"></div>
+                        </div>
+                    </div>
                 </div>
                 <input type="submit" class="contact-form__button" value="ОТПРАВИТЬ СООБЩЕНИЕ">
             </form>
