@@ -12,9 +12,9 @@ body {
 }
 
 .modal-wrapper {
-  background: rgba(0, 173, 95, 0.8);
+  background: rgba(0, 173, 95, 0.8) cover;
   background-image: linear-gradient(180deg, #0e81d6, rgba(0, 173, 95, 0.8)), url('main-background.jpg');
-  height: 100vh;
+  background-size: cover;
 }
 
 .modal {
@@ -31,7 +31,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  flex-basis: 0;
 }
 
 .contact-info {
@@ -83,6 +82,7 @@ body {
 .contact-form__title {
   font-size: 30px;
   font-weight: normal;
+  color: #333;
   margin-bottom: 60px;
 }
 
@@ -209,11 +209,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  .modal-wrapper {
+    height: 100vh;
+  }
   .modal {
     flex-direction: row;
   }
   .contact-info-wrapper {
     flex-grow: 4;
+    flex-basis: 0;
   }
   .contact-form-wrapper {
     order: 0;
