@@ -26,7 +26,7 @@ body {
 }
 
 .contact-info-wrapper {
-  background: rgba(0, 0, 0, 0.8);
+  background: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ body {
 }
 
 .contact-form-wrapper {
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   flex-grow: 1;
   order: -1;
 }
